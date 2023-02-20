@@ -12,7 +12,7 @@ condition of validation:
  * @return {boolean}
  */
 
-var isValid = function (s) {
+let isValid = function (s) {
   const open = ["(", "{", "["];
   const close = [")", "}", "]"];
   const stack = [];
@@ -25,3 +25,5 @@ var isValid = function (s) {
   }
   return stack.length === 0;
 };
+
+console.log(isValid("(){}"));
