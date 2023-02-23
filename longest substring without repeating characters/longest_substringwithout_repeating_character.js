@@ -15,3 +15,7 @@ var lengthOfLongestSubstring = function (s) {
   }
   return len;
 };
+
+console.log(lengthOfLongestSubstring("abcabcbb")); // 3
+console.log(lengthOfLongestSubstring("bbbbbb")); // 2
+console.log(lengthOfLongestSubstring("pwwkew")); //3
