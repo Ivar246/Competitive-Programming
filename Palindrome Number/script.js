@@ -8,7 +8,7 @@ palindrome
  * @param {number} x
  * @return {boolean}
  */
-var isPalindrome = function (x) {
+let isPalindrome = function (x) {
   if (x > 2 ** 31 - 1) return;
   let rev = 0;
   let temp = x;
