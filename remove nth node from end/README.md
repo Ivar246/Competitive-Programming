@@ -1,12 +1,15 @@
-Problem
+<h1>Problem</h1>
+
 Given the head of a linked list, remove the nth node from the end of the list and return its head.
+  
+    Example:
 
-Input: head = [1,2,3,4,5], n = 2
-Output: [1,2,3,5]
-
+    Input: head = [1,2,3,4,5], n = 2
+    Output: [1,2,3,5]
 
 Constraints:
-The number of nodes in the list is sz.
-1 <= sz <= 30
-0 <= Node.val <= 100
-1 <= n <= sz
+
+      The number of nodes in the list is size.<br>
+      1 <= size <= 30<br>
+      0 <= Node.val <= 100<br>
+      1 <= n <= size
