@@ -1,7 +1,7 @@
 <h1>Problem</h1>
 
 Given the head of a linked list, remove the nth node from the end of the list and return its head.
-  
+
     Example:
 
     Input: head = [1,2,3,4,5], n = 2
@@ -9,7 +9,7 @@ Given the head of a linked list, remove the nth node from the end of the list an
 
 Constraints:
 
-      The number of nodes in the list is size.<br>
-      1 <= size <= 30<br>
-      0 <= Node.val <= 100<br>
+      The number of nodes in the list is size.
+      1 <= size <= 30
+      0 <= Node.val <= 100
       1 <= n <= size
