@@ -8,3 +8,5 @@ function fizzBuzz(num) {
 }
 
 fizzBuzz(15);
+
+// Time complexity: O(n)
