@@ -20,4 +20,7 @@ key=int(input("Enter key: "))
 # key is a search element
 
 index = binary_search(array,l,r, key )
-print("Key found at index: ", index)
+if(index==-1):
+    print('Element not found!')
+else:
+    print("Key found at index: ", index)
