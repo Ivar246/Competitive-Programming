@@ -1,17 +1,16 @@
 import math
 
 def binary_search(a, l, r, key):
-    flag = 0
     if(l<=r):
         m=math.floor((l+r)/2);
         if(key==a[m]):
-            flag=m
+            return m
         elif(key<a[m]):
             return binary_search(a, l, m-1, key)
         else:
             return binary_search(a, m+1, r, key)
     else:
-        return flag
+        return -1
      
     
 array = [2,4,7,9,11,12];
