@@ -21,3 +21,14 @@ The `binary_search` function performs the following steps:
 3. **Return**:
    - If the element is found, return its index.
    - If the element is not found, return `-1`.
+
+### Time Complexity
+
+- **Best Case**: `O(1)`  
+  The best case occurs when the target value is found in the middle of the array on the first comparison.
+
+- **Average Case**: `O(log n)`  
+  On average, binary search performs `log2(n)` comparisons, where `n` is the number of elements in the array. This logarithmic time complexity makes binary search much faster than linear search for large arrays.
+
+- **Worst Case**: `O(log n)`  
+  The worst case occurs when the target value is either not present or located at one of the ends of the array. In this case, the algorithm performs approximately `log2(n)` comparisons to either find the target or conclude that it is not in the array.
