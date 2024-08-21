@@ -1,21 +1,23 @@
-# Binary Search Implementation in Python
+# Binary Search Algorithm Implementation
 
 ## Overview
 
-This project contains an implementation of the binary search algorithm in Python. Binary search is an efficient way to find a target value within a **sorted** array. The algorithm works by repeatedly dividing the search interval in half until the target value is found or the interval is empty.
+Binary search is an efficient method for finding a target value within a **sorted** array by repeatedly dividing the search interval in half.
 
-## How It Works
+## Algorithm Description
 
-The function `binary_search` takes the following parameters:
-- `a`: The sorted array in which to search.
-- `l`: The left boundary index of the current search interval.
-- `r`: The right boundary index of the current search interval.
-- `key`: The target value to search for.
+The `binary_search` function performs the following steps:
+1. **Initial Setup**:
+   - Takes a sorted array `a`, left index `l`, right index `r`, and the target value `key`.
 
-### Algorithm Steps:
-1. **Base Condition**: If the left index `l` is greater than the right index `r`, the search interval is empty, and the function returns `0` (indicating the element was not found).
-2. **Calculate Middle Index**: The middle index `m` is calculated as the floor division of `(l + r) / 2`.
-3. **Compare the Middle Element**:
-   - If `a[m]` equals `key`, the function sets `flag` to `m`, indicating the index where the key is found.
-   - If `key` is less than `a[m]`, the function recursively searches the left half by calling `binary_search(a, l, m-1, key)`.
-   - If `key` is greater than `a[m]`, the function recursively searches the right half by calling `binary_search(a, m+1, r, key)`.
+2. **Search Process**:
+   - **Base Case**: If the left index `l` is greater than the right index `r`, return `-1` (indicating the target value is not present in the array).
+   - **Calculate Middle Index**: Compute the middle index `m` using `math.floor((l + r) / 2)`.
+   - **Compare and Recur**:
+     - If the middle element `a[m]` equals the target `key`, return `m` (index where the key is found).
+     - If the target is less than `a[m]`, recursively search the left subarray (`l` to `m-1`).
+     - If the target is greater than `a[m]`, recursively search the right subarray (`m+1` to `r`).
+
+3. **Return**:
+   - If the element is found, return its index.
+   - If the element is not found, return `-1`.
