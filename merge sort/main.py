@@ -12,11 +12,6 @@ def merge_sort(a:list)->list:
     return merge(sortedleft, sortedright)
 
 
-def printlist(a, l, r):
-    for i in range(l, r+1):
-        print(a[i], end=",")
-
-
 def merge(r:list, l:list)->list:
     result =  []
     i=j=0
@@ -32,10 +27,10 @@ def merge(r:list, l:list)->list:
     
     result.extend(l[i:])
     result.extend(r[j:])
-
+    
     return result
+
 
 unsorted_array = [88,14,25,16,82,43,12,28]
 sorted_array = merge_sort(unsorted_array)
-
 print(sorted_array)
