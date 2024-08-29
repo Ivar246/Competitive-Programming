@@ -35,4 +35,3 @@ The `merge` function combines two sorted subarrays into a single sorted array:
 - **Space Complexity:** \(O(n)\)  
   Merge Sort requires additional space proportional to the size of the input array for the merge operation. This additional space is used to store temporary arrays while merging, resulting in linear space complexity.
 
-## Code
